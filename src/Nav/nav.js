@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Ul = styled.ul`
   position: fixed;
@@ -16,10 +16,10 @@ const Ul = styled.ul`
 `;
 const Li = styled.li`
   display: inline-block;
-  width: calc(100% / 7);
+  width: calc(100% / 8);
 `;
 
-function Nav () {
+function Nav() {
   return (
     <Ul>
       <Li>
@@ -43,8 +43,11 @@ function Nav () {
       <Li>
         <Link to="/todo">Todo</Link>
       </Li>
+      <Li>
+        <Link to="/counter">Counter</Link>
+      </Li>
     </Ul>
-  )
+  );
 }
 
 export default Nav;
